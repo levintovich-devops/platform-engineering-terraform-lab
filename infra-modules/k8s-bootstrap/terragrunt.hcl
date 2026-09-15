@@ -9,12 +9,12 @@ terraform {
 inputs = {
   namespace_name  = "platform-dev"
   kubeconfig_path = "~/.kube/config"
-}
 
-resource_quota = {
-  "requests.cpu"    = "1"
-  "requests.memory" = "1Gi"
-  "limits.cpu"      = "2"
-  "limits.memory"   = "2Gi"
-  "pods"            = "10"
+  resource_quota = {
+    "requests.cpu"    = "1"
+    "requests.memory" = "1Gi"
+    "limits.cpu"      = "2"
+    "limits.memory"   = "2Gi"
+    "pods"            = "10"
+  }
 }
