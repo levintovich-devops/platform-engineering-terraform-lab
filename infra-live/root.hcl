@@ -1,5 +1,5 @@
 locals {
-  state_root = "${get_repo_root()}/.local-state"
+  state_root = get_env("TF_STATE_ROOT", "/artifacts/terraform-state")
 }
 
 generate "backend" {
