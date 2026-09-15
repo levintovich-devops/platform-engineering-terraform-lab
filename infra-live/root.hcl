@@ -25,3 +25,7 @@ provider "kubernetes" {
 }
 EOF
 }
+
+inputs = {
+  kubeconfig_path = "~/.kube/config"
+}

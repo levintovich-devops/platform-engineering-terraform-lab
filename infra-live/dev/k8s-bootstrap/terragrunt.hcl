@@ -7,8 +7,7 @@ terraform {
 }
 
 inputs = {
-  namespace_name  = "platform-dev"
-  kubeconfig_path = "~/.kube/config"
+  namespace_name  = "platform-dev"  
 
   resource_quota = {
     "requests.cpu"    = "1"
